@@ -10,6 +10,12 @@ import UIKit
 import SBCycleScrollView
 import IQKeyboardManagerSwift
 import ESPullToRefresh
+import Moya
+import Moya_SwiftyJSONMapper
+import ObjectMapper
+import Result
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
     
@@ -56,7 +62,14 @@ class ViewController: UIViewController {
             self.tableView.es.noticeNoMoreData()
             
         }
-    
+        
+        CommentProvider.request(.recommendList) { result in
+            print(result)
+            
+            if case let .success(response) = result {
+               print(response)
+            }
+        }
     }
 }
 

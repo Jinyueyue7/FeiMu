@@ -14,6 +14,7 @@
 		6AF869AF218C2156008A2F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF869AD218C2156008A2F24 /* LaunchScreen.storyboard */; };
 		6AF869BA218C2156008A2F24 /* FeiMuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF869B9218C2156008A2F24 /* FeiMuTests.swift */; };
 		6AF869C5218C2156008A2F24 /* FeiMuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF869C4218C2156008A2F24 /* FeiMuUITests.swift */; };
+		6AF869D8218C59C7008A2F24 /* CommentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF869D7218C59C7008A2F24 /* CommentAPI.swift */; };
 		F8C20CF75B446F3B028F9563 /* Pods_FeiMu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B081D72BC6A914B27D0D1D59 /* Pods_FeiMu.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		6AF869C0218C2156008A2F24 /* FeiMuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeiMuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF869C4218C2156008A2F24 /* FeiMuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeiMuUITests.swift; sourceTree = "<group>"; };
 		6AF869C6218C2156008A2F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF869D7218C59C7008A2F24 /* CommentAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAPI.swift; sourceTree = "<group>"; };
 		B07B8EDEFA62165E976D188F /* Pods-FeiMu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeiMu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeiMu/Pods-FeiMu.debug.xcconfig"; sourceTree = "<group>"; };
 		B081D72BC6A914B27D0D1D59 /* Pods_FeiMu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeiMu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 		6AF869D2218C21F9008A2F24 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				6AF869D7218C59C7008A2F24 /* CommentAPI.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			files = (
 				6AF869A7218C2154008A2F24 /* ViewController.swift in Sources */,
 				6AF869A5218C2154008A2F24 /* AppDelegate.swift in Sources */,
+				6AF869D8218C59C7008A2F24 /* CommentAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
