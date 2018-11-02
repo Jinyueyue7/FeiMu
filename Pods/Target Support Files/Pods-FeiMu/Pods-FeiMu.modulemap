@@ -1,0 +1,6 @@
+framework module Pods_FeiMu {
+  umbrella header "Pods-FeiMu-umbrella.h"
+
+  export *
+  module * { export * }
+}
