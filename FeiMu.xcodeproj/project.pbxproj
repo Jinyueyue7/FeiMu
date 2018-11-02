@@ -14,6 +14,7 @@
 		6AF869AF218C2156008A2F24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF869AD218C2156008A2F24 /* LaunchScreen.storyboard */; };
 		6AF869BA218C2156008A2F24 /* FeiMuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF869B9218C2156008A2F24 /* FeiMuTests.swift */; };
 		6AF869C5218C2156008A2F24 /* FeiMuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF869C4218C2156008A2F24 /* FeiMuUITests.swift */; };
+		F8C20CF75B446F3B028F9563 /* Pods_FeiMu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B081D72BC6A914B27D0D1D59 /* Pods_FeiMu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D0E330FF14A9893A85BDEE8 /* Pods-FeiMu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeiMu.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeiMu/Pods-FeiMu.release.xcconfig"; sourceTree = "<group>"; };
 		6AF869A1218C2154008A2F24 /* FeiMu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeiMu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF869A4218C2154008A2F24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AF869A6218C2154008A2F24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		6AF869C0218C2156008A2F24 /* FeiMuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeiMuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF869C4218C2156008A2F24 /* FeiMuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeiMuUITests.swift; sourceTree = "<group>"; };
 		6AF869C6218C2156008A2F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07B8EDEFA62165E976D188F /* Pods-FeiMu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeiMu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeiMu/Pods-FeiMu.debug.xcconfig"; sourceTree = "<group>"; };
+		B081D72BC6A914B27D0D1D59 /* Pods_FeiMu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeiMu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C20CF75B446F3B028F9563 /* Pods_FeiMu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				6AF869B8218C2156008A2F24 /* FeiMuTests */,
 				6AF869C3218C2156008A2F24 /* FeiMuUITests */,
 				6AF869A2218C2154008A2F24 /* Products */,
+				B98882077794D6F052DE7BAD /* Pods */,
+				FDE8A36E244237D8652613F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +104,7 @@
 		6AF869A3218C2154008A2F24 /* FeiMu */ = {
 			isa = PBXGroup;
 			children = (
+				6AF869D2218C21F9008A2F24 /* Class */,
 				6AF869A4218C2154008A2F24 /* AppDelegate.swift */,
 				6AF869A6218C2154008A2F24 /* ViewController.swift */,
 				6AF869A8218C2154008A2F24 /* Main.storyboard */,
@@ -125,6 +133,30 @@
 			path = FeiMuUITests;
 			sourceTree = "<group>";
 		};
+		6AF869D2218C21F9008A2F24 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		B98882077794D6F052DE7BAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B07B8EDEFA62165E976D188F /* Pods-FeiMu.debug.xcconfig */,
+				1D0E330FF14A9893A85BDEE8 /* Pods-FeiMu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FDE8A36E244237D8652613F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B081D72BC6A914B27D0D1D59 /* Pods_FeiMu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AF869C9218C2156008A2F24 /* Build configuration list for PBXNativeTarget "FeiMu" */;
 			buildPhases = (
+				284E7B2DE5858E1ACA96C9B1 /* [CP] Check Pods Manifest.lock */,
 				6AF8699D218C2154008A2F24 /* Sources */,
 				6AF8699E218C2154008A2F24 /* Frameworks */,
 				6AF8699F218C2154008A2F24 /* Resources */,
+				CB4C0F2901DD25332EF7E197 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +284,77 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		284E7B2DE5858E1ACA96C9B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeiMu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB4C0F2901DD25332EF7E197 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FeiMu/Pods-FeiMu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-SwiftyJSONMapper/Moya_SwiftyJSONMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SBCycleScrollView/SBCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_SwiftyJSONMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeiMu/Pods-FeiMu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6AF8699D218C2154008A2F24 /* Sources */ = {
@@ -430,6 +535,7 @@
 		};
 		6AF869CA218C2156008A2F24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07B8EDEFA62165E976D188F /* Pods-FeiMu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +553,7 @@
 		};
 		6AF869CB218C2156008A2F24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0E330FF14A9893A85BDEE8 /* Pods-FeiMu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
